@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
             }
         }
 
-		printf("Travail termine - Au revoir");
+		printf("Travail termine, Au revoir");
 
 	return 0;
 

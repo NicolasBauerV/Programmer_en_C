@@ -1,0 +1,6 @@
+#Ignoration des fichier Git
+
+*.exe
+*.o
+*.depend
+*.layout
