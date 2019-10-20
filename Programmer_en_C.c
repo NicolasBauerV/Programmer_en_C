@@ -32,6 +32,10 @@ int main(int argc, char const *argv[])
 
 		printf("Travail termine, Au revoir");
 
+        //Faire un exemple d'une condition en C qui sera découper en deux solutions la première avec un opérateur logique && et || et contient aussi un sinon
+        // un exemple avec une boucle tant que, for et do while
+        //Faire un exemple avec l'opérateur ternaire
+
 	return 0;
 
 }
