@@ -30,8 +30,8 @@ int main(int argc, char const *argv[])
 
 		printf("Choisissez quelle utilisation en particulier.\n\n");
 
-		printf("Entrez '1' pour une condition if, else \n(sans operateur logique)\n");
-		printf("Entrez '2' pour une condition if, else\n (avec operateur logique)\n");
+		printf("Entrez '1' pour une condition if, else (sans operateur logique)\n");
+		printf("Entrez '2' pour une condition if, else (avec operateur logique)\n");
 		printf("Entrez '3' pour une boucle for\n");
 		printf("Entrez '4' pour une boucle while\n");
 		printf("Entrez '5' pour une boucle do_while\n\n");
@@ -53,7 +53,7 @@ int main(int argc, char const *argv[])
 					scanf("%d", &nombre2);
 					SAUTDELIGNE
 
-					if(nombre1 < nombre2) //Si le 1er nombre est < au 2eme nombre, alors \n\n
+					if(nombre1 < nombre2) //Si le 1er nombre est < au 2eme nombre, alors
 					{
 						printf("Votre 1er nombre: %d est bien inferieur a %d\n", nombre1, nombre2);
 						SAUTDELIGNE
@@ -151,7 +151,7 @@ int main(int argc, char const *argv[])
 
 				case 5 : 
 
-					nombreRandom = (rand() % (NOMBREBMAX - MIN + 1)) + MIN;
+					nombreRandom = (rand() % (NOMBREBMAX - MIN + 1)) + MIN; // Choix automatique entre 1 et 5 (inclus)
 
 					printf("Vous avez choisi la boucle do_while\n");
 					SAUTDELIGNE
