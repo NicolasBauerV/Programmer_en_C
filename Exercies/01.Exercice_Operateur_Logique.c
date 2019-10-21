@@ -9,7 +9,7 @@
 #define VICTOIRE printf("Bien jouer !\n\n");// La même chose mais vous gagnez
 #define RECOMMENCER printf("Et c'est reparti !\n"); // Lors du menu de fin, si vous recommencez alors ce message s'affiche
 #define AUREVOIR printf("Merci d'avoir utiliser mon programme ! :)\n"); // Message d'adieu
-#define SAUTDELIGNE printf("\n"); //Creer pour le saut de ligne
+#define RETOURL printf("\n"); //Creer pour le saut de ligne
 
 
 int main(int argc, char const *argv[])
@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
 		printf("Entrez '5' pour une boucle do_while\n\n");
 		printf("Ps: Si vous choisissez un nombre au dessus de 5 ou en dessous de 0 vous vous retrouverez au menu 'quitter ou recommencer ?'\n\n");
 		scanf("%d", &choix);
-		SAUTDELIGNE
+		RETOURL
 
 		if(choix <= 5 || choix >= 0)
 		{
@@ -45,72 +45,72 @@ int main(int argc, char const *argv[])
 			{
 				case 1 :
 					printf("Vous avez choisi d'avoir un exemple de condition if, else (sans operateur logique)\n");
-					SAUTDELIGNE
+					RETOURL
 					printf("Veuillez renseigner d'abord un 1er numero\n");
 					scanf("%d", &nombre1);
-					SAUTDELIGNE
+					RETOURL
 					printf("Veuillez ensuite renseigner un 2eme numero\n");
 					scanf("%d", &nombre2);
-					SAUTDELIGNE
+					RETOURL
 
 					if(nombre1 < nombre2) //Si le 1er nombre est < au 2eme nombre, alors
 					{
 						printf("Votre 1er nombre: %d est bien inferieur a %d\n", nombre1, nombre2);
-						SAUTDELIGNE
+						RETOURL
 					}
 					else if(nombre1 == nombre2)
 					{
 						printf("Votre 1er nombre: %d est egal au 2eme nombre: %d\n", nombre1, nombre2);	
-						SAUTDELIGNE
+						RETOURL
 					}
 					else
 					{
 						printf("Votre 1er nombre: %d est superieur au 2eme nombre: %d\n", nombre1, nombre2);
-						SAUTDELIGNE
+						RETOURL
 					}
 				break;	
 
 				case 2 :
 					printf("Vous avez choisi d'avoir un exemple de condition if, else (avec operateur logique)\n");
-					SAUTDELIGNE
+					RETOURL
 					printf("Veuillez renseigner d'abord un 1er numero\n");
 					scanf("%d", &nombre1);
-					SAUTDELIGNE
+					RETOURL
 					printf("Veuillez ensuite renseigner un 2eme numero\n");
 					scanf("%d", &nombre2);
-					SAUTDELIGNE
+					RETOURL
 
 					if (nombre1 < nombre2 || nombre2 > nombre1) //Le premier nombre doit-etre inferieur au 2eme nombre
 					{
 						printf("Vous etes rentre dans la condition\n");
-						SAUTDELIGNE
+						RETOURL
 					}
 					else if(nombre1 == nombre2)
 					{
 						printf("Si vous avez choisi d'egaliser les deux nombres\n");
-						SAUTDELIGNE
+						RETOURL
 					}
 					else
 					{
 						printf("Vous n'etes pas la condition\n");
-						SAUTDELIGNE
+						RETOURL
 					}
 				break;
 
 				case 3 :
 					
 					printf("Vous avez choisi la boucle for\n");
-					SAUTDELIGNE
+					RETOURL
 					printf("Veuillez saisir le 1er nombre\n");
 					scanf("%d", &nombre1);
-					SAUTDELIGNE
+					RETOURL
 					printf("Veuillez saisir le 2eme nombre\n");
 					scanf("%d", &nombre2);
 
 					Sleep(1000); //Attente de 1000Ms (soit 1 seconde)
 
 					printf("Nous allons faire une addition en %d tours\n", TOURMAX);
-					SAUTDELIGNE
+					RETOURL
 
 					Sleep(2000); //Attente de 1000Ms (soit 1 seconde)
 
@@ -127,9 +127,9 @@ int main(int argc, char const *argv[])
 
 				case 4 : 
 					printf("Vous avez choisi la boucle while\n");
-					SAUTDELIGNE
+					RETOURL
 					printf("L'exemple consistera a choisir un nombre entre 1 et %d, tant que votre nombre sera inferieur a %d nous ne sortirons pas de la boucle\n", NBMAX, NBMAX);
-					SAUTDELIGNE
+					RETOURL
 					printf("Choisissez quel nombre...\n");
 					scanf("%d", &nombre1);
 
@@ -145,7 +145,7 @@ int main(int argc, char const *argv[])
 					else
 					{
 						printf("Vous n'avez pas respecte la consigne !\n");
-						SAUTDELIGNE
+						RETOURL
 					}
 				break;
 
@@ -154,12 +154,12 @@ int main(int argc, char const *argv[])
 					nombreRandom = (rand() % (NOMBREBMAX - MIN + 1)) + MIN; // Choix automatique entre 1 et 5 (inclus)
 
 					printf("Vous avez choisi la boucle do_while\n");
-					SAUTDELIGNE
+					RETOURL
 					printf("L'exemple consistera par exemple de choisir un nombre entre 1 et 5 (inclus)\n");
 					printf("Le but sera de trouver le nombre choisi aleatoirement\n");
-					SAUTDELIGNE
+					RETOURL
 					printf("Voici les nombres\n");
-					SAUTDELIGNE
+					RETOURL
 
 					do
 					{	
@@ -168,7 +168,7 @@ int main(int argc, char const *argv[])
 						printf("3\n");
 						printf("4\n");
 						printf("5\n");
-						SAUTDELIGNE
+						RETOURL
 
 						printf("Choisissez un nombre...\n");
 						scanf("%d", &nombre1);
@@ -185,17 +185,17 @@ int main(int argc, char const *argv[])
 		}
 
 		printf("Voulez vous recommencez ? \n");
-		SAUTDELIGNE
+		RETOURL
 		printf("Saisissez '1' pour OUI ou '0' pour NON\n");
 		scanf("%d", &validation);
-		SAUTDELIGNE
+		RETOURL
 
 		if (validation == 0)
 			AUREVOIR
 		else if (validation == 1)
 			RECOMMENCER
-			SAUTDELIGNE
-			SAUTDELIGNE
+			RETOURL
+			RETOURL
 		
 	}while(validation != 0);
 
