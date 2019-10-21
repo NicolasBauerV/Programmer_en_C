@@ -155,7 +155,7 @@ int main(int argc, char const *argv[])
 
 					printf("Vous avez choisi la boucle do_while\n");
 					SAUTDELIGNE
-					printf("L'exemple consistera par exemple de choisir un nombre entre 1 et 5\n");
+					printf("L'exemple consistera par exemple de choisir un nombre entre 1 et 5 (inclus)\n");
 					printf("Le but sera de trouver le nombre choisi aleatoirement\n");
 					SAUTDELIGNE
 					printf("Voici les nombres\n");
