@@ -55,8 +55,8 @@ void InitTab() // initialisation du tableau + affichage
 	{
 		for (j = 0; j < TMAX; ++j) //Colonnes
 		{
-			ligne[i][j] = '-';
-			printf("%c", ligne[i][j]);
+			ligne[i][j] = '-'; //Initialisation avec '-' comme caractère
+			printf("%c", ligne[i][j]); // Affichage du tableau
 		}
 		SDL
 	}	
