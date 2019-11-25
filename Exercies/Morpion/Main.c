@@ -133,7 +133,7 @@ void jeuMecanique(char morpionMatrice[TMAX][TMAX], char valInit)
 							printf("Joueur 1 gagne\n");
 						break;
 						case 2:
-							printf("joueur2 gagne\n");
+							printf("joueur 2 gagne\n");
 						break;
 
 						default : 
