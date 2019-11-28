@@ -75,10 +75,10 @@ void Jeu(int t_Joueur[TMAX], int TabCode[TMAX])
 	    scanf("%4d", &codeJoueur);
 	    fflush(stdin); //Libération de mémoire entrée
 
-	    t_Joueur[0] = codeJoueur % 10000 /1000;
-	    t_Joueur[1] = codeJoueur % 1000 /100;
-	    t_Joueur[2] = codeJoueur % 100 /10;
-	    t_Joueur[3] = codeJoueur % 10;
+	    t_Joueur[0] = codeJoueur % 10000 /1000; //On récupère l'unité de la milleme
+	    t_Joueur[1] = codeJoueur % 1000 /100; // On récupère l'unité de la centaine
+	    t_Joueur[2] = codeJoueur % 100 /10; // On récupère l'unité de la dizaine
+	    t_Joueur[3] = codeJoueur % 10; // On récupère l'unité
 
 	    Verif(t_Joueur, TabCode);
 	    essaies--;
